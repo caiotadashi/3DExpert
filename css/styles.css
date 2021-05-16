@@ -17,7 +17,7 @@ a {
 }
 
 .header {
-    /* height: 6rem; */
+    height: 5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -145,12 +145,12 @@ p{
 
 @media screen and (max-width: 530px) {
     .header {
-        display: inline-block;
-        text-align: center;
+        height: 2rem;
+        display: inline;
     }
 
     .header__logo {
-        display: inline-flex;
+        text-align: center;
         margin: 0.7rem ;
     }
     
