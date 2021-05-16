@@ -85,11 +85,11 @@ p{
 
 .main__card_img {
     max-width: 300px;
-    box-shadow: 1px 1px 5px #c4c4c4;
+    box-shadow: 0px 2px 5px #c4c4c4;
 }
 
 .main__card_img:hover{
-    transform: scale(1.02);
+    box-shadow: 0px 5px 10px #c4c4c4;
     transition: 0.3s;
 }
 
@@ -117,16 +117,15 @@ p{
 
     .main__cards {
         display: inline;
-        margin: 3rem auto;
     }
 
-    .main__card {
-        display: inline-flex;
-        margin: 5px;
+    .main__card_img {
+        max-width: 80%;
+        margin: 1rem;
     }
 
     .main__banner_img {
-        max-width: 100%;
+        width: 100%;
     }
 
     .main__contato_box {
@@ -144,6 +143,10 @@ p{
 }
 
 @media screen and (max-width: 530px) {
+    .container {
+        width: 100%;
+    }
+
     .header {
         height: 2rem;
         display: inline;
