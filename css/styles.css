@@ -1,0 +1,171 @@
+body {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header {
+    /* height: 6rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 100%;
+    display: flex;
+    margin: 0.7rem;
+}
+
+.header__img_logo {
+    max-width: 50px;
+    margin: 0;
+}
+
+.header__3d_expert {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: auto .25rem;
+    padding: auto 0;
+}
+
+.header__menu{
+    display: flex;
+}
+
+.header__menu_itens{
+    font-size: 1.25rem;
+    font-weight: 400;
+    justify-content: space-between;
+    margin: auto .7rem;
+}
+
+.header__menu_itens > a:hover{
+    border-bottom: 2px solid #000;
+}
+
+.main__banner_img {
+    max-width: 940px;
+}
+
+.main__projetos{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 2rem auto;
+}
+
+p{
+    margin: 1rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.main__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+
+.main__card_img {
+    max-width: 300px;
+    box-shadow: 1px 1px 5px #c4c4c4;
+}
+
+.main__card_img:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.main__contato_dados {
+    text-align: left;
+}
+
+.main__contato_dados>p {
+    margin: 0 auto 1rem auto;
+}
+
+.main__contato_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__contato_title {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 940px) {
+    .container {
+        width: 100%;
+    }
+
+    .main__cards {
+        display: inline;
+        margin: 3rem auto;
+    }
+
+    .main__card {
+        display: inline-flex;
+        margin: 5px;
+    }
+
+    .main__banner_img {
+        max-width: 100%;
+    }
+
+    .main__contato_box {
+        display: inline;
+    }
+
+    .main__contato_dados>p {
+        text-align: center;
+    }
+
+    .main__contato_maps{
+        text-align: center;
+        /* display: none; */
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .header__logo {
+        display: inline-flex;
+        margin: 0.7rem ;
+    }
+    
+    .header__menu {
+        margin: .75rem;
+        justify-content: space-around;
+    }
+
+    .main__card_img {
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+
+    .main__contato_maps{
+        display: none;
+    }
+
+}
